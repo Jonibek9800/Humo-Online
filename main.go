@@ -13,7 +13,6 @@ func main() {
 	if err != nil {
 		log.Fatal("Cannot open database, err is:", err)
 	}
-	defer DB.Close()
 	err = db.DatabaseInit(DB)
 	if err != nil {
 		log.Fatal("Cannot create tables, error is:", err)
